@@ -31,18 +31,18 @@ print(track.name)
 
 curr.song <- song.files[1]
 #3
-desired_output = paste(,track.name)
 
 
 
 
-vector_1 = vector(mode = "character", length = 0)
-for(i in length(storedM))
-  append(vector_1, which(num[i] == 2))
 
-print(vector_1)
-
-
-
+# vector_1 = vector(mode = "character", length = 0)
+# for(i in length(storedM))
+#   append(vector_1, which(num[i] == 2))
+# 
+# print(vector_1)
+# 
+# 
+# 
 
 

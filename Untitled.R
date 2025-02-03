@@ -13,16 +13,17 @@ album.dirs <- storedM[which(num == 2)]
 
 
 curr.album <- album.dirs[1]
-#1
+#1-2
 stored_files = list.files(path = curr.album)
 num1 = str_count(stored_files, ".wav")
 num1
-song.files <- stored_files[which(num1 == 1)]
-#2
+song.files = stored_files[which(num1 == 1)]
+#3
+#a.
 code.to.process = vector(mode = "character", length = 0)
 curr.song = song.files[1]
 comb1 = paste(curr.album, curr.song, sep="/")
-
+#b.
 track.name = str_sub(curr.song, start = 1, end = -5)
 track.split = str_split(track.name, "-")
 track.split = track.split[[1]]

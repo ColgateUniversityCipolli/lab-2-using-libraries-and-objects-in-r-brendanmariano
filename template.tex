@@ -90,44 +90,34 @@
 
 \begin{multicols}{2}
 \begin{abstract}
-This document provides a basic template for the 2-page labs we will complete each week. Here, briefly summarize what you did and why it might be helpful. Provide all the top-line conclusions, but avoid providing \emph{all} the details. Results should be limited to ``we show X, Y, and Z."
+In this lab, we used \texttt{Essentia} to extract information about the song Allen Town and the previous songs from its contributors who are The Front Bottom, The Manchester Orchestra and All Get Out. Using the data, we compared the information from each band to that from the song to determine whether The Front Bottom or the Manchester Orchestra contributed the most to the song. 
 \end{abstract}
 
-\noindent \textbf{Keywords:} What topics does the lab cover concerning class? List 3-4 key terms here, separated by semicolons.
+\noindent \textbf{Keywords:} Loops; Vectors, Libraries; Directories
 
 \section{Introduction}
-Provide an overarching summary of what you're talking about. In this section, you introduce the idea to the reader, and your goal is to pull them in. What's the mystery you aim to solve?
-
-You want to provide enough background to understand the context of the work. Specifically, what is the question you are addressing? If it applies, describe what information currently exists about this problem, including citations, and explain how the question you're answering complements this work.
-
-Provide a roadmap of the structure of the paper. 
+The overarching goal for this entire project is to determine whether The Front Bottom or the Manchester Orchestra contributed the most to their joint song Allen Town. There was also one other contributor in this song, All Get Out (they created the first four lines), that we had to consider. In this lab, we used the music analysis program, \texttt{Essentia}, to create data about previously made tracks from each of the artists and stored it in a \texttt{.json} file \citep{json1}. After compiling information about each band, we compared that to the information about Allen Town to reach a conclusion. 
+ 
 
 \subsection{Intro Subsection}
-You might need/want to discuss the topics in subsections. Or, you may have multiple questions.
+
 
 
 \section{Methods}
-Describe the data you are working with, if applicable. Describe the specific process you will follow to answer the question at hand. This does not mean you should write something like this.
-\begin{quote}
-\textit{I did this and then I did that and then I did this other thing and then..., and then..., and then...}
-\end{quote}
-Instead, it should provide a clear and concise narrative that flows from the problem specification in the Introduction to how you will approach answering it. This is where I would expect to see some citations for \texttt{R} packages you will use to conduct the statistical analysis reported in the Results section.
+
 
 
 \subsection{Methods Subsection}
-Much like the Introduction, subsections can be helpful for the Methods section. For example, you might describe data collection and the statistical analyses of the collected data in different subsections. Or, you may have different questions that require distinct methods. 
-
+  When we were initially given the songs, they were each in the form of a \texttt{.wav} file. In order to extract the information about them, we needed to insert a command line argument for each song. One of the difficulties was that it would have been inefficient to type each command, so we wrote code to put the proper commands into a batch file where they can be read. 
 \section{Results}
-Tie together the Introduction -- where you introduce the problem at hand -- and the methods --  what you propose to do to answer the question. Present your data, the results of your analyses, and how each reported aspect contributes to answering the question. This section should include table(s), statistic(s), and graphical displays. Make sure to put the results in a sensible order and that each result contributes a logical and developed solution. It should not just be a list. Avoid being repetitive. 
+
 
 \subsection{Results Subsection}
-Subsections can be helpful for the Results section, too. This can be particularly helpful if you have different questions to answer. 
+
 
 
 \section{Discussion}
- You should objectively evaluate the evidence you found in the data. Do not embellish or wish-terpet (my made-up phase for making an interpretation you, or the researcher, wants to be true without the data \emph{actually} supporting it). Connect your findings to the existing information you provided in the Introduction.
 
-Finally, provide some concluding remarks that tie together the entire paper. Think of the last part of the results as abstract-like. Tell the reader what they just consumed -- what's the takeaway message?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography

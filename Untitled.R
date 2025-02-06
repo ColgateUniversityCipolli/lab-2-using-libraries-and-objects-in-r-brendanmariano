@@ -18,7 +18,6 @@ for (curr.album in album.dirs)
   {
     #Quotations may need to be fixed
     comb1 = paste( '"',curr.album, "/", curr.song,'"', sep = "")
-    
     #Removes the .wav from the track name
     track.name = str_sub(curr.song, start = 1, end = -5)
     #Finds the track name (Not including artist or anything else)
@@ -36,7 +35,7 @@ for (curr.album in album.dirs)
     file.output = paste(curr.artist, album.name,track.name, sep = "-")
     file.output = paste('"',file.output,".json", '"', sep = "")
     #Creates vector of code to be processed
-    code.to.process = c(code.to.process, paste("streaming_extractor_music.exe", comb1, file.output, sep = " "))
+    code.to.process = c(code.to.process, paste("streaming_extractor_music.exe", " ",'"',curr.song, '"', " ", file.output, sep = ""))
   }
 }
 #Puts code into .txt file
